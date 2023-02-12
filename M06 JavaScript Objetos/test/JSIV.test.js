@@ -160,13 +160,16 @@ describe('JAVASCRIPT IV', function () {
 
    describe('agregarAmigo(objetoUsuario, nuevoAmigo)', function () {
       it('Debe agregar el nuevo amigo al final del arreglo de una propiedad', function () {
+         const listOfFriends = ['Ben', 'Austen', 'Ryan', 'Mike', 'Young']
          const user = {
-            amigos: ['Ben', 'Austen', 'Ryan', 'Mike', 'Young'],
+            amigos: listOfFriends,
          };
          const newFriend = 'Shay';
-         expect(agregarAmigo(user, 'Shay').amigos.pop()).toBe('Shay');
+         listOfFriends.push(newFriend)
+         expect(agregarAmigo(user, newFriend).amigos).toEqual(listOfFriends)     
       });
    });
+   
 
    describe('pasarUsuarioAPremium(objetoMuchosUsuarios)', function () {
       it("Debe retornar un arreglo donde todos los usuarios tengan el valor True en su propiedad 'esPremium'", function () {

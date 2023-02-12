@@ -1,0 +1,19 @@
+/*function agregarAmigo(objetoUsuario, nuevoAmigo) {
+   // El parámetro "objetoUsuario" tiene una propiedad llamada "amigos" igual a un arreglo.
+   // Debes agregar el "nuevoAmigo" al final de este arreglo.
+   // Retornar el objeto.
+   // Tu código:
+   objetoUsuario.amigos.push(nuevoAmigo)
+   console.log(objetoUsuario)
+   return objetoUsuario
+}
+
+const user = {
+    amigos: ['Ben', 'Austen', 'Ryan', 'Mike', 'Young'],
+ };
+console.log(agregarAmigo(user, 'Shay').amigos)*/
+
+var caca = ['Ben', 'Austen', 'Ryan', 'Mike', 'Young']
+caca.push('Culito')
+console.log(caca)
+
